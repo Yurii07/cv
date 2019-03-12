@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="./libs/isotope-docs/css/isotope-docs.css">-->
+
+    <link rel="stylesheet" href="./build/css/all.css">
+
+    <title>Adamenko portfolio</title>
+
+</head>
+<body>
+
+<header class="header">
+
+    <div class="container-fluid top-bar d-flex justify-content-between">
+        <ul class="social list-inline ">
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="facebook-f"
+                         class="svg-inline--fa fa-facebook-f fa-w-9 social" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 264 512">
+                        <path fill="currentColor"
+                              d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="google-plus-g"
+                         class="svg-inline--fa fa-google-plus-g fa-w-20 social" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 640 512">
+                        <path fill="currentColor"
+                              d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+                    </svg>
+                </a>
+
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/Yurii07">
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="github"
+                         class="svg-inline--fa fa-github fa-w-16 social" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 496 512">
+                        <path fill="currentColor"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="skype"
+                         class="svg-inline--fa fa-skype fa-w-14 social" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                              d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul><!--//social-->
+        <div class="actions ">
+            <a class="btn d-none d-md-inline-block" href="mailto:skyey07@gmail.com">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="paper-plane"
+                     class="svg-inline--fa fa-paper-plane fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                          d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+                </svg>
+                Hire Me</a>
+            <a class="btn" href="path to file" download="proposed_file_name">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="download"
+                     class="svg-inline--fa fa-download fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                          d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path>
+                </svg>
+                Download My Resume
+            </a>
+        </div><!--//actions-->
+    </div><!--//top-bar-->
+
+    <div class="intro">
+        <div class="container text-center">
+            <img class="profile-image" src="./build/images/11.jpg" alt="Avatar">
+            <h1 class="name">Adamenko Yurii</h1>
+            <div class="title">Frontend Developer</div>
+            <div class="profile">
+                <p>Main goal to get the position of «Junior Front-end developer» with opportunities for professional and
+                    personal growth.</p>
+            </div><!--//profile-->
+        </div><!--//container-->
+    </div><!--//intro-->
+
+    <div class="contact-info">
+        <div class="container text-center">
+            <ul class="list-inline">
+                <li class="email list-inline-item">
+                    <svg aria-hidden="true" data-prefix="fas" data-icon="envelope"
+                         class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                    </svg>
+                    <a href="#">skyey07@gmail.com</a>
+                </li>
+                <li class="list-inline-item">
+                    <svg aria-hidden="true" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16"
+                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path>
+                    </svg>
+                    <a href="#">+38 (063) 153 02 12</a>
+                </li>
+                <li class="website list-inline-item">
+                    <svg aria-hidden="true" data-prefix="fas" data-icon="globe" class="svg-inline--fa fa-globe fa-w-16"
+                         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="currentColor"
+                              d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path>
+                    </svg>
+                    <a href="https://yurii07.github.io/cv/" target="_blank">yurii07.github.io</a>
+                </li>
+            </ul>
+        </div><!--//container-->
+    </div><!--//contact-info-->
+
+    <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+
+        <nav class="navbar navbar-expand-md" data-toggle="sticky-onscroll">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <!--<svg></svg>-->
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#experience-section" data-target="anchor">Experiences <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education-section" data-target="anchor">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill-section" data-target="anchor">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio-section" data-target="anchor">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carousel-section" data-target="anchor">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section" data-target="anchor">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+
+        <section id="experience-section" class="experiences-section section">
+            <h2 class="section-title">Work Experiences</h2>
+            <div class="timeline">
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">GrApps</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Kiev</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Junior WordPress Developer</div>
+                        <div class="time">4 month</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Website development and used of such technologies</p>
+                        <ul class="check-mark">
+                            <li class="check-mark">Wordpress</li>
+                            <li>Advanced Custom Fields for WordPress Developers.</li>
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>GIT</li>
+                            <li>Gulp</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Design studio</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Kiev</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Junior Frontend Developer</div>
+                        <div class="time">6 month</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Adaptive cross-browser layout from PSD mockups. Using HTML, CSS, JavaScript, JQuery,
+                            Bootstrap 4, Wordpress, Flexbox.</p>
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">ТОВ Надійний інтернет-магазин </h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Kiev</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Junior Frontend Developer</div>
+                        <div class="time">3 month</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Convert PSD mockups into adaptive cross-browser HTML page using Bootstrap 4, preprocessor
+                            LESS, jQuery as the foundation frameworks.
+                            Magento XML system.
+                        </p>
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Freelance</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Kiev</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Frontend Developer</div>
+                        <div class="time">9 month</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Successfully completed courses such as: JavaScript Basic "IT Education InfoPulse", Front-end
+                            developer – HTML/CSS. More than 10 layouts made. </p>
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+
+            </div><!--//timeline-->
+        </section><!--//section-->
+
+        <section id="education-section" class="education-section section">
+            <h2>Education</h2>
+            <div class="row">
+                <div class="item col-12">
+                    <div class="item-inner">
+                        <h3 class="degree">Higher Education</h3>
+                        <div class="education-body">
+                            International Economics at National Aviation University
+                        </div><!--//education-body-->
+                        <div class="time">2008-2013</div>
+                        <!--<div class="desc">-->
+                        <!--Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget-->
+                        <!--dolor.-->
+                        <!--Aenean massa. Cum sociis natoque penatibus et magnis dis parturient-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+            <h2>Courses</h2>
+            <div class="row">
+                <div class="col">
+                    <p>JavaScript Basic, "IT Education Academy" </p>
+                    <p>JavaScript Advanced, "IT Education Academy" </p>
+                    <p>JavaScript Professional, "IT Education Academy" </p>
+                </div>
+
+                <div class="col">
+                    <p>Front-end developer – HTML/CSS, "IT Education InfoPulse"</p>
+                    <p>JavaScript Basic, "IT Education InfoPulse" </p>
+                </div>
+            </div>
+        </section><!--//section-->
+
+        <section id="skill-section" class="skills-section section text-center">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="top-skills">
+                <h3 class="subtitle">Top Skills</h3>
+                <div class="row">
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <div class="chart-easy-pie chart text-center">
+                                <div class="first circle">
+                                    <strong></strong>
+                                </div>
+                            </div>
+                            <h4 class="skill-name">HTML</h4>
+                            <div class="level">Expert, 1 years</div>
+                            <div class="desc">
+                                Is a markup language used for structuring and presenting content on the World Wide Web.
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <div class="chart-easy-pie chart text-center">
+                                <div class="second circle">
+                                    <strong></strong>
+                                </div>
+                            </div>
+                            <h4 class="skill-name">CSS</h4>
+                            <div class="level">Expert, 1 years</div>
+                            <div class="desc">
+                                Cascading Style Sheets (CSS) is a style sheet language used for describing the
+                                presentation of a document written in a markup language like HTML.
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <div class="chart-easy-pie chart text-center">
+                                <div class="third circle">
+                                    <strong></strong>
+                                </div>
+                            </div>
+                            <h4 class="skill-name">JavaScript</h4>
+                            <div class="level">Advanced, half-year</div>
+                            <div class="desc">
+                                Is a high-level, interpreted programming language. It is a language which is also
+                                characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+
+                    <div class="other-skills col-12">
+                        <h3 class="subtitle">Other Skills</h3>
+                        <div class="misc-skills">
+                            <span class="skill-tag">SCSS</span>
+                            <span class="skill-tag">LESS</span>
+                            <span class="skill-tag">JQuery </span>
+                            <span class="skill-tag">Flexbox</span>
+                            <br>
+                            <span class="skill-tag">GIT</span>
+                            <span class="skill-tag">Gulp</span>
+                            <span class="skill-tag">GitLab</span>
+                            <span class="skill-tag">Bootstrap3/4</span>
+                            <span class="skill-tag">Wordpress</span>
+                            <span class="skill-tag">Adobe Photoshop</span>
+                        </div>
+                    </div><!--//other-skills-->
+                </div>
+            </div>
+        </section><!--//section-->
+
+
+        <section id="portfolio-section" class="portfolio-section section">
+            <!--<div class="container">-->
+            <h2 class="section-title">Portfolio</h2>
+
+            <ul id="filters" class="filters clearfix">
+                <li class="type active" data-filter="*">All</li>
+                <li class="type" data-filter=".latest">Latest</li>
+                <li class="type" data-filter=".frontend">Front-end</li>
+                <li class="type" data-filter=".api">API</li>
+            </ul><!--//filters-->
+            <div class="items-wrapper isotope row">
+
+                <div class="item latest frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/nois-wallpaper-abstract.jpg" alt="alexis"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project Alexis</a></h3>
+                            <div class="meta">HTML, SASS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/alexis/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item alexis-->
+
+                <div class="item latest frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/waxm.jpg" alt="waxom"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project Waxom</a></h3>
+                            <div class="meta">HTML,CSS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/waxom/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item waxom-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/foodltd.jpg" alt="foodLTD"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project Food LTD</a></h3>
+                            <div class="meta">HTML,CSS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/foodltd/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item foodltd-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/portfolio-web.jpg" alt="web-site"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project Portfolio web</a></h3>
+                            <div class="meta">HTML, CSS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/portfolioWeb/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item portfolio-web-->
+
+                <div class="item latest frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid"
+                                 src="http://placehold.jp/20/673ab7/ffffff/230x125.png?text=under%20construction"
+                                 alt="waxom"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">Django/JavaScript</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="#"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item under construction-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/curriculum-vitae.png" alt="curriculum-vitae"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Curriculum</a></h3>
+                            <div class="meta">HTML, CSS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/curriculum/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item curriculum-vitae-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/test.png" alt="test"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project Test</a></h3>
+                            <div class="meta">HTML, CSS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/test/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item test-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/testing.jpg" alt="testing"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project Testing</a></h3>
+                            <div class="meta">HTML, CSS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/testing/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item testing-->
+
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/goodInc.png" alt="goodINC"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project GoodInc</a></h3>
+                            <div class="meta">HTML, CSS, Jquery</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/goodinc/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item goodInc-->
+
+                <div class="item latest api col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="./build/images/api.JPG" alt="API"/>
+                        </figure>
+                        <div class="content text-left">
+                            <h3 class="sub-title"><a href="#">Project weather api</a></h3>
+                            <div class="meta">Javascript</div>
+                            <div class="action"><a href="#">View on Github</a></div>
+                        </div><!--//content-->
+                        <a class="link-mask" href="https://yurii07.github.io/api/"></a>
+                    </div><!--//item-inner-->
+                </div><!--//item api-->
+
+            </div><!--//item-wrapper-->
+            <!--</div>-->
+        </section><!--// portfolio-section-->
+
+        <section id="carousel-section" class="section">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 " src="./build/images/nois-wallpaper-abstract.jpg" alt="First slide"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 " src="./build/images/waxm.jpg" alt="Second slide"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 " src="./build/images/foodltd.jpg" alt="Third slide"/>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section><!--//carousel-section-->
+
+        <section id="contact-section" class="contact-section section">
+            <h2 class="text-center">Get in Touch</h2>
+            <div class="row ">
+                <div class="col-2 ">
+                    <img class="profile-image-contact mx-auto d-block" src="./build/images/11.jpg" alt="Avatar">
+                </div>
+                <div class="col-10">
+                    <div class="dialog">
+                        <p>Find the right solution.</p>
+                        <p><strong>Contact me today !</strong></p>
+                        <p>
+                            Drop me a line at
+                            <a class="text-purple" href="mailto:skyey07@gmail.com">skyey07@gmail.com</a>
+                            or call me at
+                            <a class="text-purple" href="tel:+380631530212">+38 (063) 153 02 12</a>
+                        </p>
+                        <ul class="social list-inline ">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <svg aria-hidden="true" data-prefix="fab" data-icon="facebook-f"
+                                         class="svg-inline--fa fa-facebook-f fa-w-9 social"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+                                        <path fill="currentColor"
+                                              d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <svg aria-hidden="true" data-prefix="fab" data-icon="google-plus-g"
+                                         class="svg-inline--fa fa-google-plus-g fa-w-20 social"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                        <path fill="currentColor"
+                                              d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Yurii07">
+                                    <svg aria-hidden="true" data-prefix="fab" data-icon="github"
+                                         class="svg-inline--fa fa-github fa-w-16 social"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                        <path fill="currentColor"
+                                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <svg aria-hidden="true" data-prefix="fab" data-icon="skype"
+                                         class="svg-inline--fa fa-skype fa-w-14 social"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                              d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul><!--//social-->
+                    </div>
+                </div>
+            </div>
+        </section><!--// contact-section-->
+
+    </div>
+</main>
+
+<span class="scroll-to-top" id="topFunction">
+    <svg aria-hidden="true" data-prefix="fas" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fa-w-14"
+         role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor"
+                                                                                   d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg>
+</span>
+
+
+<footer class="footer text-center">
+    <div class="container">
+        <small class="copyright">Template by Yurii Adamenko @ <a href="https://yurii07.github.io/cv/" target="_blank">yurii07.github.io</a>
+        </small>
+    </div><!--//container-->
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+<!--appear.js-->
+<script src="https://rawgit.com/morr/jquery.appear/0.3.6/jquery.appear.js"></script>
+
+<!--<script src="./libs/easy-pie-chart-master/dist/jquery.easypiechart.js"></script>-->
+
+<!--<script src="./libs/progressbar.js/dist/progressbar.js"></script>-->
+
+<!--<script src="./libs/anime-master/anime.min.js"></script>-->
+
+<script src="./build/js/all.js"></script>
+
+
+</body>
+</html>
